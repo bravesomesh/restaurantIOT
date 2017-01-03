@@ -25,6 +25,10 @@ app.get('/', function(req, res) {
     res.render('index.html');
 });
 
+app.get('/admin', function(req, res) {
+	res.render('/admin/index.html');
+});
+
 http.listen(app.get('port'), function() {
     console.log("Express server listening on port " + app.get('port'));
 });
